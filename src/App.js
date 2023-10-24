@@ -1,8 +1,8 @@
 import './App.css';
+import Greeting from './components/greeting';
 import { useDispatch } from 'react-redux';
+import { fetchGreeting } from './redux/greeting/GreetingSlice';
 import { useEffect } from 'react';
-import Greeting from './components/greeting.jsx';
-import { fetchGreeting } from './redux/greeting/GreetingSlice.js';
 
 function App() {
   const dispatch = useDispatch();
@@ -13,7 +13,7 @@ function App() {
 
   return (
     <div className="App">
-      < Greeting />
+      <Greeting />
     </div>
   );
 }
