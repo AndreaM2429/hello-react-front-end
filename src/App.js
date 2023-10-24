@@ -1,8 +1,8 @@
 import './App.css';
-import Greeting from './components/greeting';
 import { useDispatch } from 'react-redux';
-import { fetchGreeting } from './redux/greeting/GreetingSlice';
 import { useEffect } from 'react';
+import Greeting from './components/greeting';
+import { fetchGreeting } from './redux/greeting/GreetingSlice';
 
 function App() {
   const dispatch = useDispatch();
